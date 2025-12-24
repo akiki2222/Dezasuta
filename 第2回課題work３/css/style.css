@@ -25,14 +25,12 @@
 
 .nav-list li {
   position: relative;
-  padding: 0 15px;
+  padding: 6px 15px;
+  border-right: 1px solid black;
 }
 
-.nav-list li:not(:last-child)::after {
-  content: "|";
-  position: absolute;
-  right: -15px;
-  color: #999;
+.nav-list li(:last-child) {
+  border-right: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -42,6 +40,7 @@
     display: flex;
     padding: 20px;
     width: 100%;
+    box-sizing: border-box;
   }
 
   .nav-list {
@@ -55,8 +54,12 @@
     border-bottom: 1px solid #ddd;
     padding: 10px 0px;
     width: 100%;
+    border-right: none;
   }
 
+  .nav {
+    width: 100%;
+  }
   .nav-list li:not(:last-child)::after {
     display: none;
   }
