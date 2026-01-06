@@ -29,7 +29,7 @@
   border-right: 1px solid black;
 }
 
-.nav-list li(:last-child) {
+.nav-list li:last-child{
   border-right: none;
 }
 
