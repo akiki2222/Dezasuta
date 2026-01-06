@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>第3回課題</title>
+  </head>
+  <body>
+    <script>
+      let result = 0;
+      // 宣言します、resultという変数の中に０という数字が入っています。
+      for (let i = 1; i <= 10; i++) {
+        // 繰り返します、何を（宣言します、初期値は１です。初期値が１０以下の場合、初期値に１を足します）
+        result = result + i;
+        // resultという変数に初期値を足します（これを繰り返します）
+      }
+      if (result >= 20) {
+        // もしresultが２０より大きかったら
+        console.log("20以上");
+        // 20以上と表示しますよ（true)
+      } else {
+        // それ以外は
+        console.log("20未満");
+        // 20未満と表示しますよ(false)
+      }
+    </script>
+  </body>
+</html>
