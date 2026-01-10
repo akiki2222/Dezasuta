@@ -82,3 +82,21 @@ body {
 a:hover {
   opacity: 0.5;
 }
+
+.concept {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: sans-serif;
+  color: #4f260b;
+}
+.concept_en {
+  font-size: 10px;
+}
+.consept_ja {
+  font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.consept_small_ja {
+  font-size: 8px;
+}
