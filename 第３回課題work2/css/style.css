@@ -12,7 +12,7 @@ h1 {
   color: blueviolet;
 }
 .work2pc {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 60px 0;
 }
@@ -27,7 +27,7 @@ h1 {
   justify-content: space-between;
 }
 .service-box {
-  width: 300px;
+  width: 31%;
   background-color: #ffff;
 }
 .service-box img {
@@ -54,8 +54,10 @@ h1 {
   .service-wrap {
     flex-direction: column;
     align-items: center;
+    padding: 0 10px;
   }
   .service-box {
+    width: 100%;
     margin-bottom: 20px;
     padding: 0;
   }
