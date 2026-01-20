@@ -1,14 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>第4回課題</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
       <div class="header_slider">
+        <picture>
+          <source
+            srcset="./images/sp_main_vs@2x-100.jpg"
+            media="(max-width:767px)"
+          />
+        </picture>
         <img src="./images/pc_first-100.jpg" alt="店内の様子" />
         <div class="header_wrap">
           <h1 class="header_logo">
@@ -26,25 +33,39 @@
               <li>ACCESS</li>
             </ul>
           </nav>
+          <div class="sp_btn">
+            <span></span>
+          </div>
+          <nav class="sp_nav">
+            <ul>
+              <li>ABOUT US</li>
+              <li>MENU</li>
+              <li>GALLERY</li>
+              <li>EVENT</li>
+              <li>ACCESS</li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
     <main>
-      <section class="concept">
-        <p class="consept_en">Have a happy day from a cup of coffee.</p>
-        <p class="consept_ja">ハッピーに溢れる1日を<br />１杯のコーヒーから。</p>
+      <div class="concept">
+        <p class="concept_en">Have a happy day from a cup of coffee.</p>
+        <p class="concept_ja">
+          ハッピーに溢れる1日を<br />１杯のコーヒーから。
+        </p>
         <p class="concept_small_ja">
           毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br />足を運んでくれるお客さんには落ち着く空間とこだわりにコーヒーを提供したい。
         </p>
-      </section>
+      </div>
       <section class="about_coffee">
         <div class="about_img">
           <img src="images/pc_about-100.jpg" alt="こだわりコーヒー" />
         </div>
         <div class="about_coffee_text">
-          <div class="about_logo">
-          <img src="images/about_us@2x.png" />
-          </div>
+          <h2 class="about_logo">
+            <img src="images/about_us@2x.png" />
+          </h2>
           <p class="offer_coffee">私たちが提供する<br />こだわりのコーヒー</p>
           <p class="service_message">
             サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
@@ -85,7 +106,7 @@
         <h2 class="gallery_logo">
           <img src="images/gallery@2x.png" alt="gallery" />
         </h2>
-        <div class="photps">
+        <div class="photos">
           <img src="images/pc_gallary_01-100.jpg" alt="写真1" />
           <img src="images/pc_gallary_02-100.jpg" alt="写真2" />
           <img src="images/pc_gallary_03-100.jpg" alt="写真3" />
@@ -103,10 +124,14 @@
             <li>
               <span class="date">2020.06.23</span>
               <span class="text">7月はイベント出展のため0/0お休みします</span>
+            </li>
+            <li>
               <span class="date">2020.03.15</span>
               <span class="text"
                 >春の新商品新発売。話題のあのブランドとコラボ</span
               >
+            </li>
+            <li>
               <span class="date">2020.02.06</span>
               <span class="text"
                 >コーヒーの日で30%OFFイベントを開催［３日間限定］</span
@@ -136,10 +161,10 @@
           <img src="images/design_cafe_logo_footer@2x.png" alt="フッターロゴ" />
         </h2>
         <div class="footer_addres">
-          <p class="footeer_text">
+          <p class="footer_text">
             OPEN 18:00 / CLOSE 24:00<br />〒150-0022<br />東京都渋谷区東京南123デザインビルB1<br />Mail:info@designcafe.tokyo
           </p>
-          <p class="copyright">©︎ 2021 DESIGN CAFE</p>
+          
         </div>
         <div class="page_top">
           <a href="index.html">
@@ -147,7 +172,19 @@
           </a>
         </div>
       </section>
+      <div class="copyright">
+          <p>©︎ 2021 DESIGN CAFE</p>
+        </div>
       <!-- フッターここまで -->
+      
     </main>
+    <script>
+      $(function () {
+        $(".sp_btn").on("click", function () {
+          $(".sp_btn").toggleClass("open");
+          $(".sp_nav").fadeToggle();
+        });
+      });
+    </script>
   </body>
 </html>
