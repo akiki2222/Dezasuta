@@ -95,7 +95,7 @@ a:hover {
 }
 .concept_en {
   font-size: 30px;
-  font-family: "游明朝";
+  /* font-family: "游明朝"; */
   margin-bottom: 24px;
 }
 .concept_ja {
@@ -167,30 +167,32 @@ a:hover {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  position: relative;
 }
 .item_title {
   color: #c1121f;
   font-size: 1.8rem;
-  margin: 15px 0 10px;
+  /* margin: 15px 0 10px; */
   text-align: left;
   font-weight: normal;
   position: absolute;
-  top: 180px;
+  top: 93%;
   left: 10px;
 }
-
+.item div {
+  position: relative;
+}
 .item img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 0 80px 0 0;
+  border-radius: 0 42px 0 0;
   object-fit: cover;
 }
 
 .item_text {
   font-size: 17px;
   line-height: 1.6;
+  text-align: left;
 }
 /* ギャラリー */
 .gallery {
@@ -221,7 +223,7 @@ a:hover {
 /* イベント */
 .event {
   margin: 0;
-  padding: 50px 20px;
+  padding: 50px 0px;
   width: 100%;
   text-align: center;
 }
@@ -237,6 +239,7 @@ a:hover {
   border: 3px solid #4a2113;
   text-align: left;
   padding: 40px 60px;
+  max-width: 1000px;
 }
 .event_list li {
   display: flex;
@@ -251,7 +254,7 @@ a:hover {
 }
 .access {
   margin: 0;
-  padding: 50px 0;
+  /* padding: 50px 0; */
   width: 100%;
   text-align: center;
 }
@@ -264,15 +267,22 @@ a:hover {
 iframe {
   width: 100%;
   height: 400px;
+  inset-block: inherit;
+  display: block;
 }
 .footer {
+  background-color: #fff;
+  position: relative;
+  padding: 50px 0;
+}
+.footer_wrap {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   /* padding: 60px 0; */
   gap: 60px;
-  background-color: #fff;
-  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .footer_logo img {
   width: 200px;
@@ -286,16 +296,18 @@ iframe {
 .page_top img {
   width: 80px;
   height: auto;
-  position: absolute;
-  top: 50px;
-  left: 1100px;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
 }
 .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  /* padding: 1 0 20 0px; */
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
 }
 
 /* スマホメニュー */
