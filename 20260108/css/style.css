@@ -89,7 +89,7 @@ a:hover {
 
 .concept {
   text-align: center;
-  padding: 60px 20px;
+  padding: 60px 20px 0 20px;
   font-family: sans-serif;
   color: #4f260b;
   gap: 60px;
@@ -119,7 +119,7 @@ a:hover {
   align-items: center;
   max-width: 1000px;
   width: 100%;
-  margin: 80px auto;
+  margin: 90px auto;
   justify-content: space-between;
 }
 
@@ -255,6 +255,8 @@ a:hover {
   margin-bottom: 15px;
   align-items: baseline;
   gap: 40px;
+  font-size: 23px;
+  line-height: 1.9em;
 }
 .text {
   text-decoration: underline;
@@ -303,8 +305,13 @@ iframe {
   margin: 0 auto 64px;
 }
 .footer_addres {
-  line-height: 2;
+  /* line-height: 2em; */
   text-align: left;
+  font-size: 20px;
+}
+.footer_text {
+  font-size: 20px;
+  line-height: 2em;
 }
 .page_top img {
   width: 125px;
@@ -407,4 +414,282 @@ iframe {
       "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     font-weight: bold;
   }
+@media screen and (max-width: 375px) {  
 }
+body {
+  background: #e8d9bf;
+}
+
+.header {
+  position: relative;
+  height: 650px;
+}
+.header_slider img {
+  width: 100%;
+  height: auto;
+}
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7% 0 3%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.pc_nav ul {
+  display: flex;
+  padding-right: 51px;
+}
+
+.header_logo {
+  width: 187px;
+  max-width: 100%;
+  height: 41px;
+}
+a:hover {
+  opacity: 0.5;
+}
+
+.concept {
+  text-align: center;
+  padding: 60px 20px 0 20px;
+  font-family: sans-serif;
+  color: #4f260b;
+  gap: 60px;
+}
+.concept_en {
+  font-size: 17px;
+  /* font-family: "游明朝"; */
+  margin-bottom: 24px;
+  /* letter-spacing:  */
+}
+.concept_ja {
+  font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 1.15em;
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+  font-feature-settings: "palt";
+}
+.concept_small_ja {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.about_coffee {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  margin: 90px auto;
+  justify-content: space-between;
+}
+
+.about_img {
+  width: 50%;
+}
+.about_img img {
+  border-radius: 0 0 80px 0;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.about_coffee_text {
+  width: 41%;
+}
+.about_logo img {
+  width: 166px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.offer_coffee {
+  font-size:36px;
+  line-height: 1.25;
+}
+
+.service_message {
+  font-size: 16px;
+  line-height: 1.75;
+}
+/* メニュー */
+.menu {
+  margin: 0 auto;
+  padding: 50px 20px;
+  max-width: 1000px;
+  text-align: center;
+}
+.menu_logo {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.menu_logo img {
+  width: 87px;
+  height: auto;
+}
+.menu_box {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.item_title {
+  color: #c1121f;
+  font-size: 38px;
+  /* margin: 15px 0 10px; */
+  text-align: left;
+  font-weight: normal;
+  position: absolute;
+  top: 93%;
+  left: 10px;
+}
+.item div {
+  position: relative;
+}
+.item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0 42px 0 0;
+  object-fit: cover;
+}
+
+.item_text {
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: left;
+  margin: 20px 0;
+}
+/* ギャラリー */
+.gallery {
+  margin: 0;
+  padding: 50px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery_logo img {
+  width: 245px;
+  height: auto;
+  margin: 0 auto 64px;
+}
+.photos {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.photos img {
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+/* イベント */
+.event {
+  margin: 0;
+  padding: 50px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.event_logo img {
+  width: 173px;
+  height: auto;
+  margin: 0 auto 64px;
+}
+.event_box {
+  /* display: inline-block; */
+  background-color: #fff;
+  border: 3px solid #4a2113;
+  text-align: left;
+  padding: 40px 60px;
+  max-width: 1000px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.event_list li {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: baseline;
+  gap: 40px;
+  font-size: 23px;
+  line-height: 1.9em;
+}
+.text {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: #4a2113;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+
+.access {
+  margin: 0;
+  /* padding: 50px 0; */
+  width: 100%;
+  text-align: center;
+}
+
+.access_logo img {
+  width: 213px;
+  height: auto;
+  margin: 0 auto 64px;
+}
+iframe {
+  width: 100%;
+  height: 400px;
+  inset-block: inherit;
+  display: block;
+}
+.footer {
+  background-color: #fff;
+  position: relative;
+  padding: 50px 0;
+}
+.footer_wrap {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 60px 0; */
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer_logo img {
+  width: 226px;
+  height: auto;
+  margin: 0 auto 64px;
+}
+.footer_addres {
+  /* line-height: 2em; */
+  text-align: left;
+  font-size: 20px;
+}
+.footer_text {
+  font-size: 20px;
+  line-height: 2em;
+}
+.page_top img {
+  width: 125px;
+  height: auto;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 100%;
+  height: 100px;
